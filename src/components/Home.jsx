@@ -213,7 +213,7 @@ const Home = () => {
         <ModalBody>
           <form action="" onSubmit={enviarDatos}>
             <input type="hidden" name="id" defaultValue={usuarioseleccionado && usuarioseleccionado.id} />
-            <input type="text" required onChange={obtenerDatosUpdat}
+            <input type="number" required onChange={obtenerDatosUpdat}
               name="identificacion" defaultValue={usuarioseleccionado && usuarioseleccionado.identificacion}
               className="form-control input"
               placeholder="Identificación"
@@ -231,7 +231,7 @@ const Home = () => {
               placeholder="Apellidos"
 
             />
-            <input type="text" required onChange={obtenerDatosUpdat}
+            <input type="number" required onChange={obtenerDatosUpdat}
               name="telefono" defaultValue={usuarioseleccionado && usuarioseleccionado.telefono}
               className="form-control input"
               placeholder="Telefono"
@@ -261,7 +261,7 @@ const Home = () => {
         <ModalBody>
           <form action="" onSubmit={RegistroDatos}>
 
-            <input type="text" required
+            <input type="number" required
               name="identificacion"
               className="form-control input"
               placeholder="Identificación"
@@ -281,7 +281,7 @@ const Home = () => {
               
 
             />
-            <input type="text" required
+            <input type="number" required
               name="telefono"
               className="form-control input"
               placeholder="Telefono"
